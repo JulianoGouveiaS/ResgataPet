@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Resgata Pet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" name="email" [(ngModel)]="model.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="nome" name="nome" [(ngModel)]="model.nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input type="telefone" name="telefone" [(ngModel)]="model.telefone"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Login</ion-label>
+    <ion-input type="login" name="login" [(ngModel)]="model.login"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="senha" name="senha" [(ngModel)]="model.senha"></ion-input>
+  </ion-item>
+  <ion-button expand="block" fill="outline" (click)="cadastrarUser()" routerDirection="forward">Enviar</ion-button>
+</ion-content>

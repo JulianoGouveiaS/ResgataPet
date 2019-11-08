@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color = "success">
+    <ion-title>Resgata Pet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" name="email" [(ngModel)]="model.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password" name="password" [(ngModel)]="model.password"></ion-input>
+  </ion-item>
+  <ion-button expand="block" fill="outline" (click)="login()" routerDirection="forward">login</ion-button>
+
+  <ion-button color = "success" routerLink="/cadastro" routerDirection="forward" >Cadastrar-se</ion-button>
+
+  <ion-card>
+    <ion-item href="#" class="activated" routerLink="/cadastro">
+      <ion-icon name="cart" slot="start"></ion-icon>
+      <ion-label>Loja</ion-label>
+    </ion-item>
+    <ion-item href="#" class="activated" routerLink="/sobre" routerDirection="forward">
+      <ion-icon name="paw" slot="start"></ion-icon>
+      <ion-label>Sobre a empresa</ion-label>
+    </ion-item>
+  
+  </ion-card>
+
+ 
+
+</ion-content>
